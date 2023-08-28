@@ -1,0 +1,65 @@
+<html>
+<head>
+<link href="../css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="wrapper">
+        <div class="box">
+            <form id='searchBox'>
+             <input placeholder='Search here...' type='text'/>
+             <input id='submitBtn' type='submit' value='Search'/>
+            </form>
+            <span id='icon'><img src="square.png" alt=""></span>
+            <nav id='navArea'>
+             <li><a href="../index.html">Home</a></li>
+                <li><a href="epquipment.html">Equipment</a></li>
+                <li><a href="furniture.html">Furniture</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+				<li><a href="../js/basket.html">Basket</a></li>
+				<li><a href="offers.html">Offers</a></li>
+          </nav>
+        </div>
+    </div>
+    <div style='clear: both;'/>
+
+	<div class="container">
+		<!--  Shopping cart table wrapper  -->
+		<div id="shopping-cart">
+			<div class="txt-heading">
+				<h1>Shopping cart</h1>
+			</div>
+			<a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
+			<table class="tbl-cart" cellpadding="10" cellspacing="1">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th class='text-right' width="10%">Unit Price</th>
+						<th class='text-right' width="5%">Quantity</th>
+						<th class='text-right' width="10%">Sub Total</th>
+					</tr>
+				</thead>
+				<!--  Cart table to load data on "add to cart" action -->
+				<tbody id="cartTableBody">
+				</tbody>
+				<tfoot>
+					<tr>
+						<td class="text-right">Total:</td>
+						<td id="itemCount" class="text-right" colspan="2"></td>
+						<td id="totalAmount" class="text-right"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<!-- Product gallery shell to load HTML from JavaScript code -->
+		<div id="product-grid">
+			<div class="txt-heading">
+				<h1>Products</h1>
+			</div>
+			<div id="product-item-container"></div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="cart.js"></script>
+</body>
+</html>

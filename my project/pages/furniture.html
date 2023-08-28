@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <form id='searchBox'>
+             <input placeholder='Search here...' type='text'/>
+             <input id='submitBtn' type='submit' value='Search'/>
+            </form>
+            <span id='icon'><img src="square.png" alt=""></span>
+            <nav id='navArea'>
+             <ul class='navArea'>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="epquipment.html">Equipment</a></li>
+                <li><a href="furniture.html">Furniture</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+				<li><a href="../js/basket.html">Basket</a></li>
+				<li><a href="offers.html">Offers</a></li>
+             </ul>
+          </nav>
+        </div>
+    </div>
+    <div style='clear: both;'/>
+    
+    <h1>This is the furnitures page</h1>
+    <script>
+    document.getElementById('icon').addEventListener('click', function () {
+        var nav = document.getElementsByTagName('nav')[0];
+        if (nav.style.display == 'block') {
+            nav.style.display = 'none';
+        } else {
+            nav.style.display = 'block';
+        }
+    }, false);
+    </script>
+    
+</body>
+</html>

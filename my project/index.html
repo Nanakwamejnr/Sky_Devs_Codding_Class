@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+	</head>
+<body>
+	
+    <div class="wrapper">
+        <div class="box">
+            <form id='searchBox'>
+             <input placeholder='Search here...' type='text'/>
+             <input id='submitBtn' type='submit' value='Search'/>
+            </form>
+            <span id='icon'><img src="square.png" alt=""></span>
+            <nav id='navArea'>
+             <ul class='navArea'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Reviews</a></li>
+				<li><a href="#">Basket</a></li>
+				<li><a href="#">Offers</a></li>
+             </ul>
+          </nav>
+        </div>
+    </div>
+    <div style='clear: both;'/>
+    
+	<section>
+	<div class='container'>
+		<h1>New Products</h1>
+			<div class='products'>
+			
+			<!---first product begins here--->
+				<div class='product1'>
+					<img src='images/pic1.jpg'/>
+					<h2>Black</h2>
+				</div>
+			<!---first product ends here--->
+				
+				<div class='product1'>
+					<img src='images/pic2.jpg'/>
+					<h2>Product 2</h2>
+				</div>
+				
+				
+				<div class='product1'>
+					<img src='images/1.jpg'/>
+					<h2>Product 1</h2>
+				</div>
+				<div class='product1'>
+					<img src='images/1.jpg'/>
+					<h2>Product 3</h2>
+				</div>
+
+			</div>
+	<article>
+	<h1>You are Welcome to my Page</h1>
+	
+	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+	Incidunt doloribus dolor in rem sed similique qui ducimus possimus
+	ad repellendus. Dignissimos, error eos totam dicta dolor exercitationem
+	architecto illum recusandae, hic quibusdam itaque ullam placeat, obcaecati
+	animi officia? Consequatur vitae in facilis minima iure, consequuntur labore
+	sunt et minus voluptatibus sit eaque pariatur eveniet animi ipsa, nostrum, 
+	 
+	eaque
+	laudantium et magnam, fugit, sunt magni quos soluta libero illum non consequatur
+	officiis. Consequuntur accusantium culpa, odio praesentium quam quod. Nisi, 
+	
+	et mollitia exercitationem architecto numquam minima, nostrum dolor eligendi voluptas voluptate pariatur repellat quod facere!</p>
+	</article>
+	
+	
+	</div>
+	
+	</section>
+	
+				
+	
+	
+	
+    
+    <script>
+    document.getElementById('icon').addEventListener('click', function () {
+        var nav = document.getElementsByTagName('nav')[0];
+        if (nav.style.display == 'block') {
+            nav.style.display = 'none';
+        } else {
+            nav.style.display = 'block';
+        }
+    }, false);
+    </script>
+    
+</body>
+</html>
